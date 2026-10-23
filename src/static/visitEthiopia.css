@@ -7,22 +7,23 @@
 }
 
 body {
-    background-color: gray;
+    background-color: #333;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    padding: 0 20px;
+    background-color: #111;
+    padding: 0 50px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 20px 0px;
+    gap: 12px;
+    padding: 15px 0px;
 }
 
 .logo h3 {
@@ -31,7 +32,7 @@ body {
 }
 
 .logo img {
-    height: 20px;
+    height: 22px;
     width: auto;
 }
 
@@ -47,6 +48,144 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
+    transition: color 0.3s ease;
 }
+
+.nav a:hover {
+    color: #f0ad4e;
+    cursor: pointer;
+}
+
+.con-body {
+    min-height: calc(100vh - 60px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/images/visit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+    display: block;
+    color: #f3b251;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #f3b251;
+    color: #000;
+    
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    margin-left: 200px;
+}
+
+.btn-primary:hover {
+    background-color: #e0a13e;
+    transform: translateY(-2px);
+}
+
+.adventures-section {
+    padding: 80px 50px;
+    background-color: #12161f;
+}
+
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.adventure-card {
+    background-color: #1a1f2c;
+    border: 1px solid #2a3142;
+    border-radius: 15px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.adventure-card:hover {
+    transform: translate(-5px);
+}
+
+.adventure-card img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #2a3142;
+    margin-bottom: 25px;
+}
+
+.adventure-card h3 {
+    color: #f3b251;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.adventure-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #f3b251;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: translateY(-2px);
+}
+
+
 
  
