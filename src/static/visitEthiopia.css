@@ -17,6 +17,7 @@ body {
     align-items: center;
     background-color: #111;
     padding: 0 50px;
+    position: sticky;
 }
 
 .logo {
