@@ -97,6 +97,18 @@ a {
     white-space: nowrap;
 }
 
+.toggleMenu {
+    display: none;
+}
+
+.toggleMenu span{
+    display: block;
+    background-color: white;
+    margin: 0.2rem;
+    border: 1px solid white;
+    width: 2rem;
+}
+
 .nav a:hover {
     color: #f3b251;
 }
@@ -626,6 +638,26 @@ a {
         padding: 10px 20px;
     }
 
+    .toggleMenu {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 0rem;
+    }
+    .submenu{
+        display: none;
+    }
+    .nav:hover .submenu{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 0rem;
+    }
+    .nav:hover ul{
+        display: flex;
+        flex-direction: column;
+    }
+
     .logo {
         padding: 5px 0;
     }
@@ -828,6 +860,8 @@ a {
     .footer-columns {
         grid-template-columns: 1fr;
     }
+
+    
 
     .contact-title {
         font-size: 1.8rem;
